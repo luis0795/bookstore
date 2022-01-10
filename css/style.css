@@ -1,0 +1,190 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+
+body {
+ font-family: 'Roboto', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 100px!important;
+  font-weight: 900!important;
+  color:#4F4D53!important;
+}
+
+h2 {
+  font-size: 64px!important;
+  font-weight: 900!important;
+  color:#4F4D53!important;
+}
+
+h3 {
+  font-size: 20px!important;;
+  font-weight: 900!important;;
+  color:#4F4D53;
+}
+
+h4 {
+  font-size: 14px!important;;
+  font-weight: 400;
+  color:#4F4D53;
+}
+
+p {
+  font-size: 20px!important;;
+  font-weight: 400;
+  color:#4F4D53;
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+
+  height: 48px;
+  background: #FFFFFF;
+}
+
+#header .logo img {
+
+  max-height: 40px;
+  /*allow logo have size with the current flex settings*/
+  flex-basis: 10%;
+}
+
+.social a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  transition: all .5s ease;
+}
+
+.websiteTitle{
+  margin-top: 12px;
+}
+
+/*--------------------------------------------------------------
+# featured
+--------------------------------------------------------------*/
+.booksOverview{
+  display: flex;
+
+}
+
+.featured{
+  background-color: #95999c;
+}
+
+.bookCard {
+    width: 250px;
+
+}
+
+.is-selected{
+  background-color: coral;
+}
+
+
+
+.cardBook{
+      flex-basis: fit-content !important;
+      margin-bottom: 40px;
+
+}
+
+.cardBookFeatured{
+      width: 100% !important;
+      flex-direction: column-reverse;
+      margin-bottom: 40px;
+        flex-basis: fit-content !important;
+      align-items: center;
+
+}
+
+
+
+.cardBookFeatured img {
+    width: 100px!important;
+    height: 160px !important;
+    margin:auto;
+    align-items: center;
+        pointer-events:none;
+
+}
+
+.cardBookContent{
+  width: 200px;
+    pointer-events:none;
+}
+.cardBookContentFeatured{
+  width: 200px;
+  text-align: center;
+     pointer-events:none;
+
+
+}
+.cardsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 768px)  {
+
+  .cardBookFeatured{
+    flex-direction: column;
+  }
+
+
+  .websiteTitle{
+      margin-right: 115px;
+  }
+
+
+  .booksOverview{
+    flex-direction: column-reverse;
+  }
+
+
+  .cardBookContent{
+      width: 167px;
+    }
+
+  img{
+              pointer-events:none;
+
+     width: 100px!important;
+    height: 160px !important;
+
+    }
+
+  #social{display: none !important;}
+  #logo{display: none !important;}
+
+}
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer {
+  background: #FFFFFF;
+  padding: 10px 0;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  transition: all .5s ease;
+}
+
